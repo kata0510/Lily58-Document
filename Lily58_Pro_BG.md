@@ -1,5 +1,4 @@
 # Lily58 Pro ビルドガイド
-[English build guide](Lily58_Pro_BG_ENG.md)
   
 ## はじめに
 Pro版はカラーバリエーションがあり、このビルドガイドの写真ではBlack版での実装をしていますがWhite版でも実装方法は全く変わらないため色を置き換えて進めてください。カラーや発売時期によって多少写真とは違うバーツが使われていることがございますが動作には差はありません。  
@@ -111,8 +110,6 @@ ProMicro上部用のアクリルの保護紙を剥がし、取り付けます。
 ![2019-01-26 15 24 52](https://user-images.githubusercontent.com/6285554/51967992-24b3ff00-24b4-11e9-8cd3-1e679094682f.jpg)
 ![unadjustednonraw_thumb_2ddc](https://user-images.githubusercontent.com/6285554/53640050-6203dc00-3c6e-11e9-9434-5591ed3e414f.jpg)
 
-## 次へ:[キーマップの書き込み/編集](Firmware.md)
+### 次へ:[キーマップの書き込み/編集](firmware.md)
 
-## 動かない時
-[動かない時 - Lily58 Pro](Lily58_Pro_Help.md)
-
+### [動かない時 - Lily58 Pro](help.md)
