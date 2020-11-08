@@ -5,6 +5,7 @@
 * [QMK Toolbox](https://github.com/qmk/qmk_toolbox/releases)  
 * [VIA Configurator](https://github.com/the-via/releases/releases/)
 * [lily58_rev1_via.hex](https://drive.google.com/file/d/1pNQqg-wFip-hwCnLi7aFFjNfxRyyM5Q5/view?usp=sharing)  
+* [lily58_rev1_via_noOLED.hex](https://drive.google.com/file/d/19CiNewbTT1lCRrP8-DUQJo7VaEKvU591/view?usp=sharing) (OLEDを取り付けない場合はこちらのファームウェアを利用してください)  
 * [lily58.json](https://drive.google.com/file/d/18NIJaN46PxQtNAZK0oOR51DQiYI7NUuk/view?usp=sharing)  
 QMK Toolboxを立ち上げ、Local fileに`lily58_rev1_via.hex`を指定します。    
 Lily58をUSBケーブルで接続し、リセットボタンを押した後Flashボタンを押して書き込みを行います。  
