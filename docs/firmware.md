@@ -2,10 +2,13 @@
 
 ## キーマップの書き込み
 以下のソフトウェアとファイルを使用して書き込みとキーマップの変更をします。
-* [QMK Toolbox](https://github.com/qmk/qmk_toolbox/releases)  
-* [VIA Configurator](https://github.com/the-via/releases/releases/)
-* [lily58_rev1_via.hex](https://drive.google.com/file/d/1pNQqg-wFip-hwCnLi7aFFjNfxRyyM5Q5/view?usp=sharing)  
-* [lily58_rev1_via_noOLED.hex](https://drive.google.com/file/d/19CiNewbTT1lCRrP8-DUQJo7VaEKvU591/view?usp=sharing) (OLEDを取り付けない場合はこちらのファームウェアを利用してください)  
+
+- [QMK Toolbox](https://github.com/qmk/qmk_toolbox/releases)  
+- [VIA Configurator](https://github.com/the-via/releases/releases/)
+- [lily58_rev1_via.hex](https://drive.google.com/file/d/1pNQqg-wFip-hwCnLi7aFFjNfxRyyM5Q5/view?usp=sharing)  
+- [lily58_rev1_via_noOLED.hex](https://drive.google.com/file/d/19CiNewbTT1lCRrP8-DUQJo7VaEKvU591/view?usp=sharing)
+    - (OLEDを取り付けない場合はこちらのファームウェアを利用してください)  
+
 QMK Toolboxを立ち上げ、Local fileに`lily58_rev1_via.hex`を指定します。    
 Lily58をUSBケーブルで接続し、リセットボタンを押した後Flashボタンを押して書き込みを行います。  
 右上の”Auto-Flash”にチェックを入れているとリセットボタンを押しただけで自動的に書き込みを開始できます。  
@@ -24,6 +27,7 @@ USBケーブルを接続中に抜き差しを行うとTRRSの構造上ショー�
 
 ## VIAを使用してキーマップを編集する
 ファームウェアを書き込み後VIA Configuratorを使用してキーマップの書き換えを行います。
+
 VIAを起動後キーボードを接続すると編集画面が表示されます。  
 ![483ecee664199a50546267c87bf43b65](https://user-images.githubusercontent.com/6285554/89755605-f2f50d00-db1a-11ea-9c02-7f7ee96179a9.png)  
 
