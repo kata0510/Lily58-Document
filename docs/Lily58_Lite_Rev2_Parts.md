@@ -13,15 +13,14 @@
 |パーツ|数量|URL|
 |:---:|---|---|
 |ProMicro|2|https://yushakobo.jp/shop/promicro-spring-pinheader/|
-|OLEDモジュール(ピンソケット付き)|2|https://yushakobo.jp/shop/oled/|
+|OLEDモジュール|2|https://yushakobo.jp/shop/oled/|
 |キースイッチ※1|58|https://yushakobo.jp/product-category/switches/|
 |キーキャップ※2|58|https://yushakobo.jp/product-category/keycaps/|
 |TRRSケーブル|1|https://yushakobo.jp/shop/trrs_cable/|
 |MicroUSBケーブル※3|1||
 
 ※1 MX互換スイッチが使用できます 
-※2 親指部分は1.5Uサイズです  
-※3 ProMicroのコネクタは抜き差しの耐久性が低いためマグネット式ケーブルを推奨  
+※2 親指部分は1.5Uサイズです
 
 迷ったときのおすすめ  
 キースイッチ:Gateron Silent Red  
