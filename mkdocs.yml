@@ -2,10 +2,24 @@ site_name: Lily58ドキュメントページ
 theme:
   name: material
   language: ja
+plugins:
+   - glightbox:
+       touchNavigation: true
+       loop: false
+       effect: zoom
+       width: 100%
+       height: auto
+       zoomable: true
+       draggable: true
 markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+  - attr_list
+  - md_in_html
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
 nav:
     - Lily58の概要: index.md
     - Lily58 Pro:
