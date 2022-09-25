@@ -1,4 +1,5 @@
 site_name: Lily58ドキュメントページ
+use_directory_urls: false
 theme:
   name: material
   language: ja
