@@ -1,0 +1,588 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="ja">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="../assets/images/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.4.2, mkdocs-material-8.5.10" name="generator"/>
+<title>Lily58 ビルドガイド - Lily58ドキュメントページ</title>
+<link href="../assets/stylesheets/main.975780f9.min.css" rel="stylesheet"/>
+<link href="../assets/stylesheets/palette.2505c338.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+<link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            
+                .gscrollbar-fixer { padding-right: 15px; }
+                .gdesc-inner { font-size: 0.75rem; }
+                body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+                body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+                body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
+                </style><script src="../assets/javascripts/glightbox.min.js"></script></head>
+<body data-md-color-accent="None" data-md-color-primary="None" data-md-color-scheme="default" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#lily58">
+          コンテンツにスキップ
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header" data-md-component="header">
+<nav aria-label="ヘッダー" class="md-header__inner md-grid">
+<a aria-label="Lily58ドキュメントページ" class="md-header__button md-logo" data-md-component="logo" href=".." title="Lily58ドキュメントページ">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            Lily58ドキュメントページ
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Lily58 ビルドガイド
+            
+          </span>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="ナビゲーション" class="md-nav md-nav--primary" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="Lily58ドキュメントページ" class="md-nav__button md-logo" data-md-component="logo" href=".." title="Lily58ドキュメントページ">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
+</a>
+    Lily58ドキュメントページ
+  </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="..">
+        Lily58の概要
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" id="__nav_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2">
+          Lily58 Pro
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Lily58 Pro" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_2">
+<span class="md-nav__icon md-icon"></span>
+          Lily58 Pro
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Lily58_Pro/">
+        Lily58 Pro 概要
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Lily58_Pro_Parts/">
+        Lily58 Pro 必要な部品
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Lily58_Pro_BG/">
+        Lily58 Pro ビルドガイド
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Lily58_Pro_Help/">
+        Lily58 Pro ヘルプページ
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" id="__nav_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3">
+          Lily58 Lite Rev2
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Lily58 Lite Rev2" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
+          Lily58 Lite Rev2
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Lily58_Lite_Rev2/">
+        Lily58 Lite Rev2 概要
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Lily58_Lite_Rev2_Parts/">
+        Lily58 Lite Rev2 必要な部品
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Lily58_Lite_Rev2_BG/">
+        Lily58 Lite Rev2 ビルドガイド
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../contact/">
+        お問い合わせ
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" id="__nav_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5">
+          古い情報
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="古い情報" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_5">
+<span class="md-nav__icon md-icon"></span>
+          古い情報
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+          Lily58 ビルドガイド
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+        Lily58 ビルドガイド
+      </a>
+<nav aria-label="目次" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_1">
+    必要部品
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_2">
+    ダイオードを取り付ける
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#trrs">
+    TRRSジャック/リセットスイッチをはんだ付けする
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#oled">
+    OLED用を使用する場合(オプション)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#pro-micro">
+    Pro Microをはんだ付けする
+  </a>
+<nav aria-label="Pro Microをはんだ付けする" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_3">
+    コンスルーを使用する場合
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_4">
+    付属のピンを使用する場合
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_5">
+    キースイッチを取り付ける
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#promicro">
+    ProMicroカバーを取り付け
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_6">
+    キーマップの書き込み
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_7">
+    動作確認
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_8">
+    困ったときは
+  </a>
+<nav aria-label="困ったときは" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#q11">
+    Q.1列(複数列)又は1行(複数行)キースイッチが反応しない
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#q">
+    Q.キースイッチが単体で反応しない
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Lily58_Lite_Parts/">
+        Lily58 Lite 必要な部品
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Lily58_Lite_BG/">
+        Lily58 Lite ビルドガイド
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="目次" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_1">
+    必要部品
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_2">
+    ダイオードを取り付ける
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#trrs">
+    TRRSジャック/リセットスイッチをはんだ付けする
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#oled">
+    OLED用を使用する場合(オプション)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#pro-micro">
+    Pro Microをはんだ付けする
+  </a>
+<nav aria-label="Pro Microをはんだ付けする" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_3">
+    コンスルーを使用する場合
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_4">
+    付属のピンを使用する場合
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_5">
+    キースイッチを取り付ける
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#promicro">
+    ProMicroカバーを取り付け
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_6">
+    キーマップの書き込み
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_7">
+    動作確認
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_8">
+    困ったときは
+  </a>
+<nav aria-label="困ったときは" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#q11">
+    Q.1列(複数列)又は1行(複数行)キースイッチが反応しない
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#q">
+    Q.キースイッチが単体で反応しない
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1 id="lily58">Lily58 ビルドガイド</h1>
+<h2 id="_1">必要部品</h2>
+<table>
+<thead>
+<tr>
+<th>パーツ名</th>
+<th>個数</th>
+<th>備考</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Lily58 PCB</td>
+<td>2枚</td>
+<td></td>
+</tr>
+<tr>
+<td>Lily58 ケース</td>
+<td>1セット</td>
+<td></td>
+</tr>
+<tr>
+<td>ProMicro</td>
+<td>2個</td>
+<td>はんだ付けの回数が減り、破損しやすいコネクタのため交換が可能になるため別売の<a href="https://yushakobo.jp/shop/a01mc-00/">コンスルー</a>の使用を推奨</td>
+</tr>
+<tr>
+<td>キースイッチ(CherryMX,PG1350)</td>
+<td>58pcs ※</td>
+<td>ALPS軸非対応</td>
+</tr>
+<tr>
+<td>キーキャップ</td>
+<td>1U 56個 1.5U 2個※</td>
+<td>1.5Uの部分は1Uでも可</td>
+</tr>
+<tr>
+<td>ダイオード 1N4148</td>
+<td>58本(個)</td>
+<td></td>
+</tr>
+<tr>
+<td>タクトスイッチ</td>
+<td>2個</td>
+<td></td>
+</tr>
+<tr>
+<td>TRRSジャック</td>
+<td>2個</td>
+<td></td>
+</tr>
+<tr>
+<td>M2 スペーサー 6mm,10mm</td>
+<td>10個,4個</td>
+<td></td>
+</tr>
+<tr>
+<td>M2 ネジ 5mm</td>
+<td>28個</td>
+<td></td>
+</tr>
+<tr>
+<td>TRS(TRRS)ケーブル</td>
+<td>1本</td>
+<td>AUXケーブルと言われるオーディオ用のケーブルです</td>
+</tr>
+<tr>
+<td>MicroUSBケーブル</td>
+<td>1本</td>
+<td>Pro Micro側のコネクタの耐久性が低いためマグネット式を推奨</td>
+</tr>
+</tbody>
+</table>
+<p>※キットには付属していないため用意が必要です。</p>
+<h2 id="_2">ダイオードを取り付ける</h2>
+<p><strong>ロープロファイルスイッチを使用する場合スイッチを取り付けるアクリルプレートとPCBの間の高さを稼げないため別売の<a href="http://akizukidenshi.com/catalog/g/gI-07084/">表面実装ダイオード(1N4148W)</a>を使用することを推奨します。
+付属の足付きダイオードを使用する場合ははんだ付けした面の飛び出しを最小限にする必要があります。(足をカットしてからはんだ付けを行う)</strong></p>
+<p>このPCBはリバーシブルなので<strong>片面づつに</strong>部品を実装していきます。ダイオードを実装する面(オレンジの部品が見える方)が裏面の扱いになります。
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="https://user-images.githubusercontent.com/6285554/52172886-61d20700-27bc-11e9-888f-42a95c7dd569.JPG"><img alt="img_2008" src="https://user-images.githubusercontent.com/6285554/52172886-61d20700-27bc-11e9-888f-42a95c7dd569.JPG"/></a>
+横から見るとこのような図になります
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="https://user-images.githubusercontent.com/6285554/51115630-2642bd80-184c-11e9-93e5-8f85ee5e45b0.png"><img alt="PCB2" src="https://user-images.githubusercontent.com/6285554/51115630-2642bd80-184c-11e9-93e5-8f85ee5e45b0.png"/></a></p>
+<p>ダイオードの足を曲げます。
+ケース3枚を重ねた状態のものに押し当てると簡単にダイオードの足を曲げることができます。<br/>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="https://user-images.githubusercontent.com/6285554/52172887-6ac2d880-27bc-11e9-9b3e-378a83c5a881.JPG"><img alt="img_2009" src="https://user-images.githubusercontent.com/6285554/52172887-6ac2d880-27bc-11e9-9b3e-378a83c5a881.JPG"/></a></p>
+<p>PCBの裏側(スイッチやProMicroを取り付けるのと反対側)に折り曲げたダイオードを差し込みます。<br/>
+ダイオードには向きがあります。PCBの表記を確認して正しい方向に差し込んで下さい。<br/>
+以下の画像のようにダイオードの黒い線が常に基板の表示の三角形の横棒のある方向に向いた状態ではんだ付けをしてください。向きが正しくないとキーが反応しません。
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="https://user-images.githubusercontent.com/6285554/52002682-f7903c80-2505-11e9-907a-8407568322da.jpg"><img alt="46900579-542c0500-cedf-11e8-87a7-07f710f7e78e" src="https://user-images.githubusercontent.com/6285554/52002682-f7903c80-2505-11e9-907a-8407568322da.jpg"/></a>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="https://user-images.githubusercontent.com/6285554/48820707-83187f00-ed99-11e8-802e-90b23ca594a0.png"><img alt="diode" src="https://user-images.githubusercontent.com/6285554/48820707-83187f00-ed99-11e8-802e-90b23ca594a0.png"/></a> </p>
+<p>裏側からはんだ付けを行いますが落ちてしまうため、マスキングテープなどで止めます。止める際にダイオードが浮かないようにテープの上から力を加えて抑えながら仮固定します。
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="https://user-images.githubusercontent.com/6285554/52172891-829a5c80-27bc-11e9-81ab-878caa8645f6.jpg"><img alt="img_2010" src="https://user-images.githubusercontent.com/6285554/52172891-829a5c80-27bc-11e9-81ab-878caa8645f6.jpg"/></a>
+はんだ付けを行います。
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="https://user-images.githubusercontent.com/6285554/52172899-b07fa100-27bc-11e9-9210-38bbdfb7d979.jpg"><img alt="unadjustednonraw_thumb_2d42" src="https://user-images.githubusercontent.com/6285554/52172899-b07fa100-27bc-11e9-9210-38bbdfb7d979.jpg"/></a></p>
+<p>はんだ付けが終わったらダイオードの足をニッパー等でカットします。カットするときに足が飛びやすいため、手で足をつまみながらカットしましょう。
+カットが終わったら10mm(長いスペーサー)を取り付けします。
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="https://user-images.githubusercontent.com/6285554/52172901-b07fa100-27bc-11e9-88a8-61a0eacfc6a4.jpg"><img alt="unadjustednonraw_thumb_2d48" src="https://user-images.githubusercontent.com/6285554/52172901-b07fa100-27bc-11e9-88a8-61a0eacfc6a4.jpg"/></a></p>
+<h2 id="trrs">TRRSジャック/リセットスイッチをはんだ付けする</h2>
+<p>表面の左上にTRRSジャックを取り付けします。どちらも裏返してはんだ付けする際に落ちたりずれやすいのでマスキングテープなどで仮固定します。
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="https://user-images.githubusercontent.com/6285554/52172948-8da1bc80-27bd-11e9-928b-fba7b8fa2b49.jpg"><img alt="unadjustednonraw_thumb_2d4a" src="https://user-images.githubusercontent.com/6285554/52172948-8da1bc80-27bd-11e9-928b-fba7b8fa2b49.jpg"/></a><br/>
+裏側からはんだ付けをします。
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="https://user-images.githubusercontent.com/6285554/52172964-e6715500-27bd-11e9-9b0a-4186301a1d56.jpg"><img alt="unadjustednonraw_thumb_2d4b" src="https://user-images.githubusercontent.com/6285554/52172964-e6715500-27bd-11e9-9b0a-4186301a1d56.jpg"/></a></p>
+<h2 id="oled">OLED用を使用する場合(オプション)</h2>
+<p>OLEDを使用する場合は表面のProMicro近くの4つのパッドをジャンパさせてください。 <br/>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="https://user-images.githubusercontent.com/6285554/52172989-41a34780-27be-11e9-858a-cc69c2626160.jpg"><img alt="unadjustednonraw_thumb_2d41" src="https://user-images.githubusercontent.com/6285554/52172989-41a34780-27be-11e9-858a-cc69c2626160.jpg"/></a></p>
+<h2 id="pro-micro">Pro Microをはんだ付けする</h2>
+<h4 id="_3">コンスルーを使用する場合</h4>
+<p><a href="https://yushakobo.jp/shop/a01mc-00/">コンスルー</a>を使用する場合は以下のような取り付け方法を行ってください。
+Helixの<a href="https://github.com/MakotoKurauchi/helix/blob/master/Doc/buildguide_jp.md#pro-micro">ビルドガイド</a>のProMicroの章を参考にはんだ付けを行います。
+ProMicro側のみはんだ付けを行い、PCB側ははんだ付けしません。
+はんだ付けが終わった後は浮きが無いようにしっかりと差し込みます。</p>
+<h3 id="_4">付属のピンを使用する場合</h3>
+<p>Pro Microを袋から取り出し、足が長い方を下にして以下の画像の赤線の内側の<strong>PCBの線で囲まれている列を確認して</strong>PCBに差し込みます。左右で差し込む場所が異なるため注意してください。 </p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="https://user-images.githubusercontent.com/6285554/48819671-6a599a80-ed94-11e8-8e5d-6a6abca326a7.png"><img alt="ProMicro_PCB" src="https://user-images.githubusercontent.com/6285554/48819671-6a599a80-ed94-11e8-8e5d-6a6abca326a7.png"/></a></p>
+<p>Pro Microをその上から部品が乗っている面を下向きにして取り付けします。
+ProMicro側をはんだ付けをします。
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="https://user-images.githubusercontent.com/6285554/52002684-f95a0000-2505-11e9-83f6-6eb3dc8f2a02.jpg"><img alt="46900581-54c49b80-cedf-11e8-88e1-25a1a2fb378d" src="https://user-images.githubusercontent.com/6285554/52002684-f95a0000-2505-11e9-83f6-6eb3dc8f2a02.jpg"/></a>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="https://user-images.githubusercontent.com/6285554/52002687-f9f29680-2505-11e9-9ecf-b7bf3ad9f270.jpg"><img alt="46900582-54c49b80-cedf-11e8-9107-83038838a7da" src="https://user-images.githubusercontent.com/6285554/52002687-f9f29680-2505-11e9-9ecf-b7bf3ad9f270.jpg"/></a></p>
+<p>ProMicro側をはんだ付け後マスキングテープ等で固定し基板の裏側からはんだ付けを行います。<br/>
+はんだ付け後ニッパーなどで余っているピンをカットします  </p>
+<h2 id="_5">キースイッチを取り付ける</h2>
+<p>トッププレートにスペーサーとキースイッチを4箇所はめ込み、ピンが曲がらないように注意しながらPCBに取り付けし、浮きや傾きが無いことを確認して4つのスイッチをはんだ付けします。
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="https://user-images.githubusercontent.com/6285554/52173011-9a72e000-27be-11e9-9716-4c9a301c35ac.jpg"><img alt="unadjustednonraw_thumb_2d3e" src="https://user-images.githubusercontent.com/6285554/52173011-9a72e000-27be-11e9-9716-4c9a301c35ac.jpg"/></a>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="https://user-images.githubusercontent.com/6285554/52173013-9fd02a80-27be-11e9-958e-54bb7e929f1d.jpg"><img alt="4dabqoswsoi9o8wor3cdfg_thumb_2d49" src="https://user-images.githubusercontent.com/6285554/52173013-9fd02a80-27be-11e9-958e-54bb7e929f1d.jpg"/></a></p>
+<p>トッププレートに残りのスイッチを取り付けをします。 <br/>
+正常に取り付けできている場合PCBからピンの足が少し出てきますが曲がっている場合やしっかりとはまっていない場合は下側の画像のように足が出てきません。足が曲がっている場合やプレートにしっかりはまっていないので1度取り外すなどして確認して下さい。 <br/>
+すべてのスイッチを取り付けをしてはんだ付けをします。
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="https://user-images.githubusercontent.com/6285554/52002691-fb23c380-2505-11e9-8fa1-c75d20d3636d.jpg"><img alt="48868154-037fc400-ee1c-11e8-9d45-b888f744387a" src="https://user-images.githubusercontent.com/6285554/52002691-fb23c380-2505-11e9-8fa1-c75d20d3636d.jpg"/></a>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="https://user-images.githubusercontent.com/6285554/48868657-b7ce1a00-ee1d-11e8-9346-9bfc967e95cf.png"><img alt="switch" src="https://user-images.githubusercontent.com/6285554/48868657-b7ce1a00-ee1d-11e8-9346-9bfc967e95cf.png"/></a></p>
+<h2 id="promicro">ProMicroカバーを取り付け</h2>
+<p>Pro Micro上部用のアクリルを取り付けます。<br/>
+幅が広い方を外側にして取り付けます。低頭ネジで上部をネジ止めします。
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="https://user-images.githubusercontent.com/6285554/48837829-c4288780-edc9-11e8-8efb-6714d8e68e92.png"><img alt="promicro_cover" src="https://user-images.githubusercontent.com/6285554/48837829-c4288780-edc9-11e8-8efb-6714d8e68e92.png"/></a>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="https://user-images.githubusercontent.com/6285554/52173081-ea9e7200-27bf-11e9-9551-3eb41a0389cb.jpg"><img alt="unadjustednonraw_thumb_2d47" src="https://user-images.githubusercontent.com/6285554/52173081-ea9e7200-27bf-11e9-9551-3eb41a0389cb.jpg"/></a></p>
+<h2 id="_6">キーマップの書き込み</h2>
+<p>キーマップを書き込むために準備が必要です。導入されていることを前提に記述しております。<a href="https://docs.qmk.fm/#/getting_started_build_tools">qmk公式のページなどを参考に導入して下さい。</a> </p>
+<p>QMK Toolboxを使用すれば環境構築の必要が無く、GUIで書き込みが行うことができます。(キーマップの変更はできません)
+<a href="https://github.com/qmk/qmk_toolbox/releases">qmk/qmk_toolbox</a></p>
+<p>Lily58のデフォルトキーマップを書き込むにはqmk_firmwareのフォルダ階層で以下を実行します</p>
+<pre><code>make lily58:default:avrdude
+</code></pre>
+<p><strong>Detecting USB port, reset your controller now...</strong> と表示されたらキーボード上のリセットボタンを押すと書き込みが始まります。<br/>
+上記の要領でもう片方のキーボードにも同じように書き込みを行って下さい。 </p>
+<p>Defaultキーマップは以下のようになっています。
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="https://user-images.githubusercontent.com/6285554/47273241-38ee8300-d5cc-11e8-9099-10c1b35e24fc.png"><img alt="lily58_default" src="https://user-images.githubusercontent.com/6285554/47273241-38ee8300-d5cc-11e8-9099-10c1b35e24fc.png"/></a></p>
+<h2 id="_7">動作確認</h2>
+<p>左右をTRRSケーブル(TRSケーブル)で接続し左側のProMicro(デフォルトキーマップの場合)にMicroUSBケーブルを接続しキーが反応するかを確認して下さい。<br/>
+裏面にゴム足を4箇所取り付けて完成です。お疲れ様でした。
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="https://user-images.githubusercontent.com/6285554/52173150-795fbe80-27c1-11e9-8376-edc698e943e8.jpg"><img alt="vu6sptlhszykivrvgkltyw_thumb_2d44" src="https://user-images.githubusercontent.com/6285554/52173150-795fbe80-27c1-11e9-8376-edc698e943e8.jpg"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="https://user-images.githubusercontent.com/6285554/52002699-fd861d80-2505-11e9-96a8-f58a93534255.jpg"><img alt="47264498-53384a80-d553-11e8-907a-a03c6f2c5893" src="https://user-images.githubusercontent.com/6285554/52002699-fd861d80-2505-11e9-96a8-f58a93534255.jpg"/></a></p>
+<h2 id="_8">困ったときは</h2>
+<h3 id="q11">Q.1列(複数列)又は1行(複数行)キースイッチが反応しない</h3>
+<p>A.ProMicroのはんだ付け、取り付けしっかりとできてない場合があります。再度確認し、必要に応じて再度はんだ付け、取り付けを行ってください。</p>
+<h3 id="q">Q.キースイッチが単体で反応しない</h3>
+<p>A.キースイッチのはんだづけ又はダイオードのはんだ付けに問題がある可能性があります。</p>
+<p>キースイッチの場合
+問題のあるキースイッチのはんだ付けを確認してください。はんだが足りてない場合は再度はんだ付けを行ってください。</p>
+<p>ダイオードのはんだ付けの場合
+ダイオードの向きを確認してください。間違っていた場合は外してはんだ付けし直してください。
+はんだ付けが足りない場合は再度はんだ付けを行ってください。</p>
+<p><strong>困った場合などはお気軽にDiscordサーバー(<a href="https://discordapp.com/invite/NM7XtDW">Self-Made Keyboards in Japan</a>)の「#Lily58」チャンネルもしくはTwitter:@F_YUUCHIにメッセージをお送りください</strong></p>
+</article>
+</div>
+</div>
+</main>
+<footer class="md-footer">
+<nav aria-label="フッター" class="md-footer__inner md-grid">
+<a aria-label="前: お問い合わせ" class="md-footer__link md-footer__link--prev" href="../contact/" rel="prev">
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</div>
+<div class="md-footer__title">
+<div class="md-ellipsis">
+<span class="md-footer__direction">
+                前
+              </span>
+              お問い合わせ
+            </div>
+</div>
+</a>
+<a aria-label="次: Lily58 Lite 必要な部品" class="md-footer__link md-footer__link--next" href="../Lily58_Lite_Parts/" rel="next">
+<div class="md-footer__title">
+<div class="md-ellipsis">
+<span class="md-footer__direction">
+                次
+              </span>
+              Lily58 Lite 必要な部品
+            </div>
+</div>
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"></path></svg>
+</div>
+</a>
+</nav>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\s\\-\u3000\u3001\u3002\uff0c\uff0e]+", "search.placeholder": "\u691c\u7d22", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version.title": "Select version"}}</script>
+<script src="../assets/javascripts/bundle.5a2dcb6a.min.js"></script>
+<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
+</html>
