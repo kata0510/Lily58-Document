@@ -11,8 +11,9 @@
 
 :::note info
     Google Chrome 89以上を使用してアクセスを行ってください
-- [ファームウェア書き込みページ](https://remap-keys.app/catalog/jztXFjMO9ZAIzyFT7CSe/firmware)
 :::
+- [ファームウェア書き込みページ Lily58 - Remap](https://remap-keys.app/catalog/jztXFjMO9ZAIzyFT7CSe/firmware)
+
 
 ProMicroを接続し、`Lily58 VIA Firmware(No OLED)`の`FLASH`を選択しChromeのダイアログが出てきたらLily58のリセットボタンを押します。   
 Lily58を選択して接続後、問題がなければ書き込みが行われます。
@@ -36,7 +37,7 @@ USBケーブルを反対側に差し替え、`FLASH`をクリックし、**右�
 このページでキーマップの変更も行えます。お好みのキーマップに変更してみましょう。
 
 ## QMK Toolboxを使用したキーマップの書き込み
-:::note info
+:::note info info
     QMK Toolboxを使用したキーマップの書き込みはRemapが使用できない場合に行ってください。
 :::
 

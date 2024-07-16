@@ -1,3 +1,9 @@
+---
+id: about
+title: About
+slug: /
+---
+
 # Lily58の概要
 Lily58はcolumn-staggeredの分割キーボードです。
 ![Lily58Lite-Pic](https://user-images.githubusercontent.com/6285554/84393842-13960900-ac37-11ea-811e-65db2948ca73.jpg)
