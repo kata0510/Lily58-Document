@@ -8,7 +8,7 @@ const config: Config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'lily58-document.pages.dev',
+  url: 'https://lily58-document.pages.dev',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/lily58/',
@@ -18,7 +18,7 @@ const config: Config = {
   organizationName: 'kata0510', // Usually your GitHub org/user name.
   projectName: 'Lily58-Document', // Usually your repo name.
 
-  onBrokenLinks: 'warn',
+  onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internationalization, you can use this field to set
@@ -105,7 +105,7 @@ const config: Config = {
           items: [
             {
               label: 'Tutorial',
-              to: '/lily58/docs/intro',
+              to: '/docs/intro',
             },
           ],
         },
